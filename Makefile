@@ -17,11 +17,7 @@ build: serverbuild
 
 serverbuild:
 	cd server && ./dockerbuild.sh
-
-artifacts:
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build  -ldflags "-X main.buildVersion=$(VERSION)-$(RELEASE)" -o ctc-linux
-	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build --ldflags "-X main.buildVersion=$(VERSION)-$(RELEASE)" -o ctc-mac
-
+	
 down:
 	docker stop bruteforceserver
 	docker rm bruteforceserver
