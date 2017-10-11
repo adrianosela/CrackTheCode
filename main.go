@@ -38,7 +38,7 @@ func main() {
 				},
 				{
 					Name:   "crack",
-					Usage:  "generates and sets a new code on the server",
+					Usage:  "queries the server with a guess for the code",
 					Action: CrackTheCode,
 					Flags: []cli.Flag{
 						cli.IntFlag{
@@ -58,7 +58,7 @@ func main() {
 				},
 				{
 					Name:   "tries",
-					Usage:  "Gets current number of tries to crack the code",
+					Usage:  "gets current number of tries to crack the code",
 					Action: Tries,
 				},
 			},
