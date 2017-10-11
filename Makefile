@@ -3,7 +3,7 @@ RELEASE:=$(shell git rev-parse --verify --short HEAD)
 
 VERSION = 0.1.0
 
-all: up
+all: build
 
 clean:
 	rm -rf pkg bin
