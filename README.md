@@ -1,8 +1,8 @@
-##Crack The Code
+## Crack The Code
 
 This purpose of this project was to experiment with go routines, channels, and select statements (on the client), mutex locks (for the resource on the server), and automating a build process using a Makefile, shell scripts and Docker containers.
 
-###Build & Run!
+### Build & Run!
 Clone the repo:
 
 ```
@@ -21,7 +21,7 @@ To stop the container and clean up Docker image:
 make down
 ```
 
-###CLI Commands:
+### CLI Commands:
 
 When the server is started, a random code is set. To set a new one at any point and reset the number of tries recorded, use the command:
 
