@@ -1,6 +1,6 @@
 ## Crack The Code
 
-This purpose of this project was to experiment with go routines, channels, and select statements (on the client), mutex locks (for the resource on the server), and automating a build process using a Makefile, shell scripts and Docker containers.
+The motivation behind this project was to experiment with go routines, channels, and select statements (on the client), mutex locks (for the resource on the server), and practice automating a build process using a Makefile, shell scripts and Docker containers.
 
 ### Build & Run!
 Clone the repo:
