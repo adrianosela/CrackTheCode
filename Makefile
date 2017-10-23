@@ -8,7 +8,7 @@ all: build
 clean:
 	rm -rf pkg bin
 
-up: build
+up: build down
 	docker run -d --name bruteforceserver -p 8080:8080 crackthecode
 
 build: serverbuild
@@ -17,7 +17,6 @@ build: serverbuild
 
 serverbuild:
 	cd server && ./dockerbuild.sh
-	
+
 down:
-	docker stop bruteforceserver
-	docker rm bruteforceserver
+	(docker stop bruteforceserver || true) && (docker rm bruteforceserver || true)
